@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patrick & SpongeBob</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #a2e4f5, #0077be);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .scene {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .character-img {
+      width: 200px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .center-text {
+      color: white;
+      font-size: 2.5em;
+      text-shadow: 2px 2px #333;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <img src="Patrick_Star.PNG.webp" alt="Patrick" class="character-img">
+    <div class="center-text">比奇堡朋友</div>
+    <img src="images.png" alt="SpongeBob" class="character-img">
+  </div>
+</body>
+</html>
